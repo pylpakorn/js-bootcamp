@@ -9,3 +9,4 @@ var food = {
 console.log(food.name);
 console.log(food["calories"]);
 console.log(food.getCalories());
+

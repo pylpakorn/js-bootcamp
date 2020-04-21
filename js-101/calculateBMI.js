@@ -15,6 +15,8 @@ var bmi = calculateBMI(45,1.5);
 
 console.log("My name is "+ name +". BMI is "+ bmi.toFixed(3));
 
+// condition statement
+
 if(bmi < 18.5){
     console.log("less than standard");
 }else if(bmi > 18.5 && bmi < 22.9){
