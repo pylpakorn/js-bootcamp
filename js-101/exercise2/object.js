@@ -1,12 +1,12 @@
 var food = {
     name: "Pizza",
     calories: 350,
-    getCalories: function(){
+    getCalories: function getCalory(){
         return this.name + " has " + this.calories + " calories."
     }
 }
 
 console.log(food.name);
 console.log(food["calories"]);
-console.log(food.getCalories());
+console.log(food.getCalory());
 

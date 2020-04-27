@@ -10,10 +10,6 @@ var orderFood = {
         this.orders.forEach(function(order){
             total = total + order.price;
         })
-        // for-loop
-        // for(var i=0; i< this.orders.length;i++){
-        //     total = total + this.orders[i].price;
-        // }
         function showTotal(){
             console.log("Total Price is "+ total);
         }

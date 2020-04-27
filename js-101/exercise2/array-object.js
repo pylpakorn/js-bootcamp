@@ -1,19 +1,8 @@
 var foods = [
-    {   name: "Pizza",
-        calories: 350 
-    },
-    {
-        name: "Salad",
-        calories: 180
-    },
-    {
-        name: "Ice-cream",
-        calories: 200
-    },
-    {
-        name: "Hamburger",
-        calories: 300
-    }
+    {   name: "Pizza",calories: 350 },
+    {   name: "Salad", calories: 180},
+    {   name: "Ice-cream", calories: 200},
+    {   name: "Hamburger", calories: 300}
 ]
 
 var getTotalCal = function(){
@@ -28,9 +17,9 @@ console.log(getTotalCal());
 
 // sort
 var sortByCal = foods.sort(function(a,b){
-    if(a.calories < b.calories){
+    if(a.name < b.name){
         return -1;
-    }else if(a.calories > b.calories){
+    }else if(a.name > b.name){
         return 1;
     }else return 0;
 })

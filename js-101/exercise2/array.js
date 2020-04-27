@@ -24,7 +24,7 @@ fruits.shift()
 console.log(fruits);
 
 //add new element to first of array unshift() 
-fruits.unshift(["Papaya", "Banana"]);
+fruits.unshift(["Banana"]);
 console.log(fruits);
 
 // find index of element in array
@@ -37,13 +37,30 @@ fruits.splice(index,1);
 console.log(fruits);
 
 
-console.log(fruits.sort());
+// console.log(fruits.sort());
 
-var filter = fruits.filter(function(fruit){
-    return fruit.length > 5;
+// var filter = fruits.filter(function(fruit){
+//     return fruit.length > 5;
+// })
+// console.log(filter);
+
+// var find = fruits.find(function(fruit){
+//     return fruit.length == 5;
+// })
+// console.log(find);
+
+var num = [4,5,7,10];
+var findPrime = num.find(function(num,index){
+    let start = 2;
+    console.log(index);
+    while (start <= Math.sqrt(num)) {
+      if (num % start++ < 1) {
+        return false;
+      }
+    }
+    return num > 1;
 })
-
-console.log(filter);
+console.log(findPrime);
 
 
 
