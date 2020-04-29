@@ -1,10 +1,17 @@
+var 
+
 var name = "Jane";
 
-var getName = function(name){  // one 
-    console.log(name);
+function getName(name = "Anonymous"){  
+    return name;
 }
+console.log(getName(name));
+console.log(getName());
 
-var income=0, expense=0, total;
+// var getName = function(name){
+//     console.log(name);
+// }
+// getName(name);
 
-function getTotal()
+
 

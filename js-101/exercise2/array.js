@@ -36,18 +36,19 @@ console.log(index);
 fruits.splice(index,1);
 console.log(fruits);
 
+//---------ES6----------
 
-// console.log(fruits.sort());
+console.log(fruits.sort());
 
-// var filter = fruits.filter(function(fruit){
-//     return fruit.length > 5;
-// })
-// console.log(filter);
+var filter = fruits.filter(function(fruit){
+    return fruit.length > 5;
+})
+console.log(filter);
 
-// var find = fruits.find(function(fruit){
-//     return fruit.length == 5;
-// })
-// console.log(find);
+var find = fruits.find(function(fruit){
+    return fruit.length == 5;
+})
+console.log(find);
 
 var num = [4,5,7,10];
 var findPrime = num.find(function(num,index){
@@ -61,6 +62,3 @@ var findPrime = num.find(function(num,index){
     return num > 1;
 })
 console.log(findPrime);
-
-
-

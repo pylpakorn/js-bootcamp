@@ -1,48 +1,43 @@
-// var i=0;
-// for(var i=1; i<4; i++){
-//     console.log("var inside for-loop: "+i)
-// }
-// // i=0;
-// console.log("var outside for-loop: "+i);
+var i=0;
+for(var i=1; i<4; i++){
+    console.log("var inside for-loop: "+i)
+}
+// i=0;
+console.log("var outside for-loop: "+i);
 
-// let i=0;
-// for(let i=0; i<3; i++){
-//     console.log("let in for-loop: "+i)
-// }
-// i = 5;
-// console.log("let out for-loop: "+i);
+let j=0;
+for(let j=0; j<3; j++){
+    console.log("let in for-loop: "+j)
+}
+// i=0;
+console.log("let out for-loop: "+j);
 
-// const i=0;
-// // i=1;
-// for(const i=0;i<3;i++){
-//     console.log("const in for-loop: "+i)
-// } // expected output: error
+// const k;    // SyntaxError: Missing initializer in const declaration
+const k=0;
+for(const k=0;k<3;k++){     // TypeError: Assignment to constant variable.
+    console.log("const in for-loop: "+k)
+} // expected output: error
 
-// console.log("const out for-loop: "+i);
-// console.log(greeter)
-// var greeter = "hey";
-// greeter = "Hi"
-// var times = 3;
+console.log("const out for-loop: "+k);
 
-// if (times > 2) {
-//   var greeter = "say Hello"; 
-// }
-// console.log(greeter)
+function printFood(){
+    let food2 = "Suki";
+    if(true){
+        var food1 = "Pizza";
+        let food2 = "Donut";
+        const food3 = "Pie";
+    }
+    console.log(food1, food2, food3);
+}
+printFood();
 
-// function printFood(){
-//     if(true){
-//         var food1 = "Pizza";
-//         let food2 = "Donut";
-//         const food3 = "Pie";
-//     }
-//     console.log(food1, food2, food3);
-// }
+function checkScope() {
+    let i = 'function scope';
+    if (true) {
+      i = 'block scope';
+      console.log('Block scope i is: ', i);
+    }
+    console.log('Function scope i is: ', i);
+}
+checkScope();
 
-// printFood();
-
-const person = {
-    name: "name"
-};
-
-const { name = "Name1" } = person;
-console.log(name);

@@ -1,6 +1,6 @@
 // String
-var str = "String";
-var str1 = 'String ';
+let str = "String";
+let str1 = 'String ';
 console.log(str);
 console.log(str1.length);
 console.log(str.concat(" "+str1));
@@ -15,6 +15,7 @@ var f = (1>2), t=(1<2);
 console.log(f);
 console.log(t);
 console.log(Boolean(str));
+console.log(0);
 
 // object
 var obj = {
@@ -24,10 +25,9 @@ var obj = {
 
 // function
 function firstFunction(){   // no parameter
-    console.log(arguments);
+    console.log("First function");
 }
 firstFunction();
-firstFunction(10,20,30)
 
 function secondFunction(param1, param2){    // with 2 arguments
     console.log(param1+", "+param2);
